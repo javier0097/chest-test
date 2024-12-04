@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "chest-test",
+	"version": "${version}",
+	"name": "chest test",
+	"description": "This is a project to apply to Eufonia. This is the chest test",
+	"authors": [
+		"Javier Martinez"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"javier.chest.ChestTest"
+		],
+		"client": [
+			"javier.chest.ChestTestClient"
+		],
+		"fabric-datagen": [
+			"javier.chest.ChestTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"chest-test.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
